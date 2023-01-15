@@ -36,7 +36,8 @@ console.log(userList)
       update={update}/>
       <UsersList 
       userList={userList} 
-      update= {update}/>
+      update= {update}
+      getUsers={getUsers} />
     </div>
   )
 }

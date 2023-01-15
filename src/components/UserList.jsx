@@ -1,10 +1,13 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
 
-const UserList = ({ userList, update, }) => {
+const UserList = ({ userList, update, getUsers }) => {
 
 
-
+const deteletUser = (user) => {
+  axios.delete(`https://users-crud.academlo.tech/users/${user.id}/`)
+  .then(res => getUsers())
+}
 
 
   return (
@@ -22,7 +25,7 @@ const UserList = ({ userList, update, }) => {
                 <button onClick={() => update(user)}>
                   <i className="fa-sharp fa-solid fa-pen"></i>
                 </button>
-                <button >
+                <button onClick={() => deteletUser(user)}>
                   <i className="fa-solid fa-trash"></i>
                 </button>
               </div>
