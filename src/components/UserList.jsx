@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
 
-const UserList = ({ userList, update,  }) => {
+const UserList = ({ userList, update, }) => {
 
 
 
@@ -20,11 +20,11 @@ const UserList = ({ userList, update,  }) => {
                 <p>{user.password}</p>
                 <p><i className="fa-solid fa-cake-candles"></i> {user.birthday}</p>
                 <button onClick={() => update(user)}>
-                  <i className="fa-sharp fa-solid fa-pen">
-                    </i></button>
+                  <i className="fa-sharp fa-solid fa-pen"></i>
+                </button>
                 <button >
-                  <i className="fa-solid fa-trash">
-                    </i></button>
+                  <i className="fa-solid fa-trash"></i>
+                </button>
               </div>
             </li>
           ))
