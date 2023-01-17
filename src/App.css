@@ -1,24 +1,187 @@
-/*#root {
-  max-width: 1280px;
+/* #root {
+   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-*/
+  text-align: center; 
+} */
+
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* text-align: center; */
+  box-sizing: border-box;
+  
 }
 
 
 
 .App{
-  padding: 1rem;
- text-align: center;
+ display: flex;
+ padding: 30px;
+ gap: 15px;
 }
 
 li{
   list-style: none;
+}
+
+/* UsersForm */
+
+
+form{
+  display: block;
+  width: 45%;
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  border: 1px solid silver;
+  border-radius: 10px;
+  height: 50%;
+  color: rgb(0, 45, 97);
+  height: 362px;
+}
+
+form i{
+  margin-top: 8px;
+}
+
+.container input{
+  display: block;
+  padding: 8px 10px;
+  margin-bottom: 13px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(228, 228, 228);
+}
+
+.user-container{
+  width: 100%;
+}
+
+.names-container{
+  display: flex;
+  gap: 10px;
+}
+
+.name{
+  width: 50%;  
+}
+
+
+.last-name{
+  width:50%;
+}
+
+.mail-container{
+  display: flex;
+  gap: 7px;
+}
+
+.password-container{
+  display: flex;
+  gap: 9px;
+}
+
+.birthday-container{
+  display: flex;
+  gap: 9px;
+}
+
+form button{
+  margin-top: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(40, 177, 219, 0.5);
+  width: 100%;
+}
+
+button:hover{
+  background-color: rgb(40, 177, 219);
+  box-shadow: none;
+  transition: .3s;
+  /* transform: scale(1.1); */
+}
+
+
+
+/* UserList */
+
+
+.users-list{
+  padding: 2rem;
+  width: 65%;
+  border-radius: 10px;
+  overflow-y: scroll; 
+  height: 362px;
+}
+
+.users-list h1{
+  margin-bottom: 20px;
+  color: rgb(4, 40, 82);
+  color: aliceblue;
+}
+
+
+.users-list p{
+  display: block;
+  padding: 3px;
+  width: 100%;
+}
+
+
+.users-card{
+  display: flex;
+  background-color: rgba(240, 240, 240, 0.678);
+  border-radius: 10px;
+  border: 1px solid rgb(151, 151, 151);
+  gap: 70px;
+  margin-bottom: 2rem;
+  color: rgb(0, 32, 37);
+}
+
+.users-card h2{
+  color: rgb(0, 45, 97);
+}
+
+.users-card:hover{
+  box-shadow: 7px 7px 2px rgb(29, 29, 29); 
+  transition: .3s;
+  background-color: rgb(240, 240, 240);
+}
+
+.users-information{
+  padding: 1rem  2rem 1rem 2rem;
+}
+
+.users-card button{
+  padding: 5px  13px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: none;
+}
+
+.users-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+
+.delete-button{
+  color: brown;
+}
+
+
+.edit-button:hover{
+  transform: scale(1.2);
+}
+  
+.delete-button:hover{
+  transform: scale(1.2);
 }
